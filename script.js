@@ -12,3 +12,20 @@ function calcula(){
 }
 var button = document.querySelector("#calcular");
 button.onclick = calcula;
+
+//ativando enter para ṔC
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+        button.click();
+    }
+});
+
+
+// Configurações da segunda tela
+/*
+function mudarEstado(){
+    var 
+}
+*/
+
+
