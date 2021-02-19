@@ -31,14 +31,17 @@
         }
     }
 .square{
- 
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
     background-color: #f4f4f4;
 }
 
-#content{
+#square-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +71,6 @@ input:focus {
 
 button{
     margin-top: 10px;
-    margin-bottom: 10px;
     width: 11.5rem;
     height: 2.5rem;
     border-radius: 10px;
@@ -91,11 +93,35 @@ button:focus {
     box-shadow: 0 0 10px #FF4500;
 }
 
+#results{
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+}
+
+table, td {
+    border: 1px solid #FF4500;;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#categorias{
+    background-color: #FF8300;
+    color: #fff;
+    text-align: center;
+}
+
+#fonte{
+    font-size: 9pt;
+    margin: 10px;
+}
+
+
 #credits{
     font-size: 9pt;
 }
 #github, #twitter, #linkedin{
     color: black;
 }
-
-/* Configuração da segunda tela */

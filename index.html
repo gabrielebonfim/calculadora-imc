@@ -13,21 +13,57 @@
 <body>
 <div class="container">
     <div class="square">
-        <div id="content">
+        <div id="square-content">
             <h1>Calculadora de IMC</h1>
             <p>Digite o seu peso</p>
             <input id="peso">
             <p>Digite sua altura</p>
             <input id="altura">
             <button id="calcular">Calcular</button>
-
-            <p id ="credits">Desenvolvido por Gabriele Bonfim</p>
+            
+    </div>
+    <div id="results">
+        <h2>O seu índice IMC é:</h2>
+        <h1 id="imc">00</h1>
+        <table>
+            <tr id="categorias">
+                <td>Classificação</td>
+                <td>IMC</td>
+            </tr>
+            <tr>
+                <td>Abaixo do peso</td>
+                <td>Abaixo 18,5</td>
+            </tr>
+            <tr>
+                <td>Peso normal</td>
+                <td>18,5 - 24,9</td>
+            </tr>
+            <tr>
+                <td>Sobrepeso</td>
+                <td>25 - 29,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade grau I</td>
+                <td>30 - 34,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade grau II</td>
+                <td>35 - 39,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade grau III ou mórbida</td>
+                <td>Maior ou igual a 40.</td>
+            </tr>
+        </table>
+        <p id="fonte">Fonte: Centro Brasileiro de Informação sobre Medicamentos (CEBRIM). </p>
+        <button id="restart">Calcule novamente</button>
+    </div>
+    <p id ="credits">Desenvolvido por Gabriele Bonfim</p>
             <div class="contact">
             <a href="" id="github"><i class="fab fa-github"></i></a>
             <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
             <a href="" id="linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
-    </div>
 
     </div>
 </div>
