@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de IMC</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
     <style>
         *{
             margin: 0;
             padding: 0;
+
+            font-family:'Roboto', sans-serif;
+            font-weight: 300;
         }
         .container{
             width: 100%;
@@ -48,8 +53,6 @@
         }
 
         h1, p{
-            font-family:'Roboto', sans-serif;
-            font-weight: 300;
             margin: 5px;
 
         }
@@ -64,8 +67,15 @@
             margin: 5px 0px;
         }
 
+        input:focus { 
+            outline: none !important;
+            border-color: #FF4500;
+            box-shadow: 0 0 10px #FF4500;
+        }
+
         button{
             margin-top: 10px;
+            margin-bottom: 10px;
             width: 11.5rem;
             height: 2.5rem;
             border-radius: 10px;
@@ -78,8 +88,21 @@
         button:hover{
             background: #FF4500;
             cursor: pointer;
+
         }
 
+        button:focus { 
+            outline: none !important;
+            border-color: #FF4500;
+            box-shadow: 0 0 10px #FF4500;
+        }
+
+        #credits{
+            font-size: 9pt;
+        }
+        #github, #twitter, #linkedin{
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -90,12 +113,19 @@
         <input id="peso">
         <p>Digite sua altura</p>
         <input id="altura">
-        <button>Calcular</button>
+        <button id="calcular">Calcular</button>
+
+        <p id ="credits">Desenvolvido por Gabriele Bonfim</p>
+        <div class="contact">
+        <a href="" id="github"><i class="fab fa-github"></i></a>
+        <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
 
     </div>
 </div>
 
-<script src="01.js"></script>   
+<script src="/script.js"></script>   
     
 </body>
 </html>
