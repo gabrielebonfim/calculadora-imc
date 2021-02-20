@@ -93,6 +93,13 @@ button:focus {
     box-shadow: 0 0 10px #FF4500;
 }
 
+#error{
+    font-size: 8pt;
+    color: red;
+    font-weight: bolder;
+    display: none;
+}
+
 #results{
     display: none;
     flex-direction: column;
@@ -116,6 +123,7 @@ table, td {
 #fonte{
     font-size: 9pt;
     margin: 10px;
+    text-align: center;
 }
 
 
